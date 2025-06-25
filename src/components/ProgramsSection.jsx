@@ -48,7 +48,7 @@ const ProgramsSection = () => {
             </div>
 
             {/* Program Offered Badge */}
-            <div className="inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm mb-8 relative z-10">
+            <div className="inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm mb-8 mt-20 relative z-10">
               <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
               <span className="text-gray-700 font-medium">Program Offered</span>
             </div>
