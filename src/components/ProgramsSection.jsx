@@ -71,7 +71,7 @@ const ProgramsSection = () => {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="/about.jpg"
                 alt="Medical students"
                 className="w-full h-[500px] object-cover"
               />

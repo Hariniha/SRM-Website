@@ -2,39 +2,45 @@ const AboutSection = () => {
   return (
     <section className="min-h-screen bg-white pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           {/* Left side - Image and Stats */}
-          <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative h-[550px] flex items-stretch">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-full">
               <img 
-                src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Medical students in classroom"
-                className="w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] object-cover"
+                src='/auditorium.jpg'
+                alt="SRM Auditorium"
+                className="w-full h-full object-cover min-h-[350px]"
               />
               
-              {/* Stats overlay */}
-              <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row gap-4">
+              {/* Blurred overlay at the bottom */}
+              <div className="absolute rounded-3xl left-0 right-0 bottom-0 h-16 lg:h-28 xl:h-32 bg-white/60 backdrop-blur-md z-10 rounded-b-3xl flex flex-row gap-2 lg:gap-4 items-end px-2 lg:px-4 pb-2 lg:pb-4">
                 {/* 25 Years Legacy */}
-                <div className="bg-blue-500 rounded-2xl p-4 sm:p-6 flex-1 text-white shadow-lg">
-                  <div className="text-4xl font-bold mb-2">25</div>
-                  <div className="text-lg font-medium">Year of Legacy</div>
+                <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
+                  <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">25</div>
+                  <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
+                    <span className="lg:text-[29px] lg:leading-[33px]">Year of</span>
+                    <span className="lg:text-[29px] lg:leading-[33px]">Legacy</span>
+                  </div>
                 </div>
                 
                 {/* 18+ Specialized Programs */}
-                <div className="bg-blue-500 rounded-2xl p-4 sm:p-6 flex-1 text-white shadow-lg">
-                  <div className="text-4xl font-bold mb-2">18+</div>
-                  <div className="text-lg font-medium">Specialized Programs</div>
+                <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
+                  <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">18+</div>
+                  <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
+                    <span className="lg:text-[29px] lg:leading-[33px]">Specialized</span>
+                    <span className="lg:text-[29px] lg:leading-[33px]">Programs</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right side - Content */}
-          <div className="space-y-6 text-gray-600 text-base sm:text-lg leading-relaxed">
+          <div className="space-y-6 text-gray-600 text-base sm:text-lg leading-relaxed h-[550px] flex flex-col justify-center mt-8 sm:mt-0">
             {/* About Us Badge */}
-            <div className="inline-flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-              <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-              <span className="text-gray-700 font-medium">About Us</span>
+            <div className="inline-flex items-center bg-white rounded-full px-2 py-1 shadow-sm w-fit min-w-0">
+              <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+              <span className="text-gray-700 font-medium text-base">About Us</span>
             </div>
 
             {/* Main Heading */}
@@ -59,7 +65,7 @@ const AboutSection = () => {
             </div>
 
             {/* Read More Button */}
-            <button className="inline-flex items-center bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+            <button className="inline-flex items-center bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-3 py-1 rounded-full text-base transition-all duration-200 shadow-lg hover:shadow-xl w-fit min-w-0 mb-8 pb-2 sm:mb-10 sm:pb-4">
               Read More
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

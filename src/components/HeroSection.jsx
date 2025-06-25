@@ -1,10 +1,13 @@
-import DNAHelix from './DNAHelix';
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br pt-6 bg-white from-gray-50 via-white to-blue-50 overflow-hidden">
-      {/* DNA Helix positioned behind the text */}
-      <DNAHelix />
+      {/* DNA GIF positioned behind the text */}
+      <img 
+        src="/dnagif.gif" 
+        alt="DNA Helix Animation" 
+        className="absolute left-[60%] sm:left-[calc(45%-16px)] top-1/3 sm:top-[45%] transform -translate-x-1/2 -translate-y-1/2 h-40 sm:h-40 md:h-60 z-0 opacity-80 pointer-events-none select-none rotate-[310deg]"
+        draggable="false"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16 h-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full pt-10 sm:pt-16 lg:pt-20">
           {/* Left Content */}
@@ -47,7 +50,7 @@ const HeroSection = () => {
           <div className="relative z-20">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/homepic1.png"
                 alt="SRM Medical College Building"
                 className="w-full h-48 sm:h-64 md:h-80 object-cover"
               />
@@ -64,12 +67,10 @@ const HeroSection = () => {
                   </svg>
                 </button>
               </div>
-            </div>
 
-            {/* Program Offered Badge */}
-            <div className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 bg-white rounded-full p-2 sm:p-4 shadow-lg">
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center">
+              {/* Program Offered Badge - Bottom Right Rectangle Overlay */}
+              <div className="absolute bottom-0 right-0 w-2/5 sm:w-1/3 h-14 sm:h-16 bg-white bg-opacity-95 rounded-tl-2xl shadow-lg flex items-center justify-center border-t border-l border-blue-200">
+                <div className="w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center mr-2 rotate-320">
                   <svg 
                     className="w-3 h-3 text-blue-500" 
                     fill="none" 
