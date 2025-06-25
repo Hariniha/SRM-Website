@@ -2,22 +2,21 @@ import DNAHelix from './DNAHelix';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-gradient-to-br bg-white from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br bg-white from-gray-50 via-white to-blue-50 overflow-hidden">
       {/* DNA Helix positioned behind the text */}
       <DNAHelix />
-      
-      <div className="max-w-7xl mx-auto px-4 pb-16 h-full relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center h-full pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16 h-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full pt-10 sm:pt-16 lg:pt-20">
           {/* Left Content */}
           <div className="space-y-8 relative">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight relative z-20">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight relative z-20">
                 Shaping Healthcare
                 <br />
                 <span className="text-gray-900">Leaders of Tomorrow</span>
               </h1>
               
-              <div className="space-y-3 text-lg text-gray-600 max-w-xl relative z-20">
+              <div className="space-y-2 sm:space-y-3 text-base sm:text-lg text-gray-600 max-w-xl relative z-20">
                 <p className="leading-relaxed">
                   Immerse Yourself In A Dynamic Learning Environment
                 </p>
@@ -28,7 +27,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex items-center relative z-20">
-              <button className="group bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-lg">
+              <button className="group bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-lg text-base sm:text-lg">
                 <span>Explore Now</span>
                 <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center ml-2">
                   <svg 
@@ -50,12 +49,12 @@ const HeroSection = () => {
               <img
                 src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="SRM Medical College Building"
-                className="w-full h-80 object-cover"
+                className="w-full h-48 sm:h-64 md:h-80 object-cover"
               />
               
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="w-16 h-16 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300">
+                <button className="w-12 h-12 sm:w-16 sm:h-16 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300">
                   <svg 
                     className="w-6 h-6 text-gray-700 ml-1" 
                     fill="currentColor" 
@@ -68,7 +67,7 @@ const HeroSection = () => {
             </div>
 
             {/* Program Offered Badge */}
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg">
+            <div className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 bg-white rounded-full p-2 sm:p-4 shadow-lg">
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center">
                   <svg 

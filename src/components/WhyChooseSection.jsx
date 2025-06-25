@@ -39,10 +39,10 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="bg-[#1CA5FD] py-10 rounded-3xl mx-6 my-6">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#1CA5FD] py-8 sm:py-10 rounded-3xl mx-2 sm:mx-6 my-4 sm:my-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="mb-16 text-left">
+        <div className="mb-10 sm:mb-16 text-left">
           {/* Why Choose SRM AHS Badge */}
           <div className="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-sm mb-8">
             <div className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
@@ -50,19 +50,19 @@ const WhyChooseSection = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
             Empowering Future<br />
             Healthcare Professionals
           </h2>
 
           {/* Description */}
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor 
             Incididunt Ut Labore Et Dolore Magna Aliqua.
           </p>
 
           {/* Explore Now Button */}
-          <button className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-all duration-200 shadow-lg hover:shadow-xl">
+          <button className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-all duration-200 shadow-lg hover:shadow-xl">
             Explore Now
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -71,7 +71,7 @@ const WhyChooseSection = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid lg:grid-cols-5 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-8 items-center">
           {/* Left Features */}
           <div className="lg:col-span-2 space-y-6">
             {features.slice(0, 2).map((feature, index) => (
@@ -94,13 +94,13 @@ const WhyChooseSection = () => {
           </div>
 
           {/* Center Image */}
-          <div className="lg:col-span-1 flex justify-center">
+          <div className="lg:col-span-1 flex justify-center mb-6 lg:mb-0">
             <div className="relative">
-              <div className="w-80 h-80 bg-yellow-400 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-40 h-40 sm:w-80 sm:h-80 bg-yellow-400 rounded-full flex items-center justify-center shadow-2xl">
                 <img 
                   src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400" 
                   alt="Healthcare Professional"
-                  className="w-72 h-72 rounded-full object-cover border-8 border-white shadow-lg"
+                  className="w-32 h-32 sm:w-72 sm:h-72 rounded-full object-cover border-4 sm:border-8 border-white shadow-lg"
                 />
               </div>
             </div>

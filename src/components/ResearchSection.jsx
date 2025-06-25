@@ -1,6 +1,6 @@
 const ResearchSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-10 py-20 text-center bg-gray-50">
+    <section className="w-full px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 text-center bg-gray-50">
       {/* Research Badge */}
       <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-blue-200">
         <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
@@ -8,18 +8,18 @@ const ResearchSection = () => {
       </div>
 
       {/* Main Heading */}
-      <h1 className="text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 leading-tight max-w-4xl mx-auto">
+      <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 mb-4 sm:mb-6 leading-tight max-w-2xl sm:max-w-4xl mx-auto">
         Driving Innovation In Allied Health Research
       </h1>
 
       {/* Subtitle */}
-      <p className="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-10 max-w-xl sm:max-w-3xl mx-auto leading-relaxed">
         Research At SRM Allied Health Sciences Is Driven By Our Mission To Advance Clinical
         Practice, Diagnostics, And Public Health Outcomes.
       </p>
 
       {/* Explore Button */}
-      <button className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-full font-medium text-base transition-colors duration-200 mb-16">
+      <button className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium text-base sm:text-lg transition-colors duration-200 mb-8 sm:mb-16">
         Explore Our Research
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M7 17L17 7M17 7H7M17 7V17"/>
@@ -27,7 +27,7 @@ const ResearchSection = () => {
       </button>
 
       {/* Stats Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Active Research Projects */}
         <div className="bg-white rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-300 transition-colors duration-200">
           <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
