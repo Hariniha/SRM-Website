@@ -47,11 +47,11 @@ const Header = () => {
           </nav>
 
           {/* Desktop Buttons */}
-          <div className="hidden md:flex bg-yellow-400 rounded-full p-1 items-center space-x-1">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
+          <div className="hidden md:flex bg-yellow-300 rounded-full p-1 items-center space-x-1">
+            <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
               Admission
             </button>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
+            <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
               Contact
             </button>
           </div>
@@ -84,10 +84,10 @@ const Header = () => {
               ))}
             </nav>
             <div className="flex flex-col space-y-3 mt-6">
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-full text-base transition-all duration-200">
+              <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-base transition-all duration-200">
                 Admission
               </button>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-full text-base transition-all duration-200">
+              <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-base transition-all duration-200">
                 Contact
               </button>
             </div>

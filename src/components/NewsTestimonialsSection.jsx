@@ -32,7 +32,7 @@ const NewsTestimonialsSection = () => {
           {/* Left Side - Latest News */}
           <div>
             {/* Latest News Header */}
-            <div className="bg-yellow-400 rounded-2xl px-8 py-6 mb-8">
+            <div className="bg-yellow-300 rounded-2xl px-8 py-6 mb-8">
               <h2 className="text-3xl font-bold text-black">Latest News</h2>
             </div>
 
@@ -45,7 +45,7 @@ const NewsTestimonialsSection = () => {
                   </p>
                   <button className="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium transition-colors duration-200">
                     Read More
-                    <svg className="ml-2 w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="ml-2 w-4 h-4 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
                   </button>
@@ -63,7 +63,7 @@ const NewsTestimonialsSection = () => {
                 
                 {/* Navigation Arrows */}
                 <div className="flex items-center space-x-3">
-                  <button className="w-12 h-12 bg-yellow-400 hover:bg-yellow-500 rounded-full flex items-center justify-center transition-colors duration-200">
+                  <button className="w-12 h-12 bg-yellow-300 hover:bg-yellow-400 rounded-full flex items-center justify-center transition-colors duration-200">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>

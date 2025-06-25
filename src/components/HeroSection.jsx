@@ -2,7 +2,7 @@ import DNAHelix from './DNAHelix';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br bg-white from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br pt-6 bg-white from-gray-50 via-white to-blue-50 overflow-hidden">
       {/* DNA Helix positioned behind the text */}
       <DNAHelix />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16 h-full relative z-10">
@@ -27,9 +27,9 @@ const HeroSection = () => {
             </div>
 
             <div className="flex items-center relative z-20">
-              <button className="group bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-lg text-base sm:text-lg">
+              <button className="group bg-gray-100 hover:bg-yellow-300 text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 flex items-center space-x-2 shadow-lg text-base sm:text-lg">
                 <span>Explore Now</span>
-                <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center ml-2">
+                <div className="w-9 h-9 bg-yellow-300 rounded-full flex items-center justify-center ml-2 rotate-320">
                   <svg 
                     className="w-3 h-3 transform group-hover:translate-x-0.5 transition-transform duration-200" 
                     fill="none" 
@@ -87,7 +87,9 @@ const HeroSection = () => {
       </div>
 
       {/* Diagonal Yellow Banner at bottom */}
-      <div className="absolute bottom-8 left-0 right-0 h-20 bg-yellow-400  transform rotate-1 origin-bottom-left overflow-hidden z-30">
+      <div className="absolute left-0 right-0 h-16 sm:h-20 bg-yellow-300 transform rotate-1 origin-bottom-left overflow-hidden z-30"
+        style={{ bottom: '1rem' }} // 8 for desktop, override below for mobile
+      >
         <div className="flex animate-scroll h-full items-center">
           <div className="flex whitespace-nowrap">
             {Array.from({ length: 8 }, (_, i) => (
@@ -98,6 +100,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      {/* Responsive gap for mobile/tab */}
+      <div className="block sm:hidden" style={{ height: '3.5rem' }} />
+      <div className="hidden sm:block lg:hidden" style={{ height: '2rem' }} />
      
     </section>
   );

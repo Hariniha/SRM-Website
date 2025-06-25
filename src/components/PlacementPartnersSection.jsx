@@ -106,14 +106,14 @@ const PlacementPartnersSection = () => {
           <div className="grid grid-cols-2 gap-8 mb-12">
             <div>
               <div className="text-5xl font-bold text-blue-600 mb-2">104+</div>
-              <div className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-medium inline-block mb-2">
+              <div className="bg-yellow-300 text-black px-4 py-2 rounded-full text-sm font-medium inline-block mb-2">
                 Companies
               </div>
               <p className="text-gray-600 text-sm">2023-24 Campus Placement Drive</p>
             </div>
             <div>
               <div className="text-5xl font-bold text-blue-600 mb-2">206+</div>
-              <div className="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-medium inline-block mb-2">
+              <div className="bg-yellow-300 text-black px-4 py-2 rounded-full text-sm font-medium inline-block mb-2">
                 Placements
               </div>
               <p className="text-gray-600 text-sm">Offers Extended To Our Talented Graduates</p>
@@ -123,7 +123,7 @@ const PlacementPartnersSection = () => {
           {/* Partner Logos */}
           <div className="space-y-6">
             {/* First Row */}
-            <div className="flex items-center justify-start gap-8">
+            <div className="flex flex-wrap items-center justify-start gap-4 sm:gap-8">
               <div className="flex items-center gap-2 opacity-60">
                 <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">S</span>
@@ -151,7 +151,7 @@ const PlacementPartnersSection = () => {
             </div>
 
             {/* Second Row */}
-            <div className="flex items-center justify-start gap-8">
+            <div className="flex flex-wrap items-center justify-start gap-4 sm:gap-8">
               <div className="flex items-center gap-2 opacity-60">
                 <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>

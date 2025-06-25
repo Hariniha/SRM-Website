@@ -19,7 +19,7 @@ const ResearchSection = () => {
       </p>
 
       {/* Explore Button */}
-      <button className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium text-base sm:text-lg transition-colors duration-200 mb-8 sm:mb-16">
+      <button className="inline-flex items-center gap-2 bg-yellow-300 hover:bg-yellow-400 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium text-base sm:text-lg transition-colors duration-200 mb-8 sm:mb-16">
         Explore Our Research
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M7 17L17 7M17 7H7M17 7V17"/>
