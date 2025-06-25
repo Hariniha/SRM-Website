@@ -4,6 +4,7 @@ import Logo from './Logo';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedButton, setSelectedButton] = useState(null); // Track selected button
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,10 +49,18 @@ const Header = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex bg-yellow-300 rounded-full p-1 items-center space-x-1">
-            <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
+            <button
+              className={`font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200 ${selectedButton === 'Admission' ? 'bg-white text-black' : 'bg-yellow-300 text-black hover:bg-white'}`}
+              onClick={() => setSelectedButton('Admission')}
+              type="button"
+            >
               Admission
             </button>
-            <button className="bg-yellow-300 hover:bg-white text-black font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200">
+            <button
+              className={`font-semibold px-6 py-2 rounded-full text-sm transition-all duration-200 ${selectedButton === 'Contact' ? 'bg-white text-black' : 'bg-yellow-300 text-black hover:bg-white'}`}
+              onClick={() => setSelectedButton('Contact')}
+              type="button"
+            >
               Contact
             </button>
           </div>
