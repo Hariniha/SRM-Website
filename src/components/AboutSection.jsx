@@ -13,7 +13,7 @@ const AboutSection = () => {
               />
               
               {/* Blurred overlay at the bottom */}
-              <div className="absolute rounded-3xl left-0 right-0 bottom-0 h-16 lg:h-28 xl:h-32 bg-white/60 backdrop-blur-md z-10 rounded-b-3xl flex flex-row gap-2 lg:gap-4 items-end px-2 lg:px-4 pb-2 lg:pb-4">
+              <div className="absolute rounded-2xl left-0 right-0 bottom-0 h-16 lg:h-28 xl:h-32 bg-white/60 backdrop-blur-md z-10 rounded-b-3xl flex flex-row gap-2 lg:gap-4 items-end px-2 lg:px-4 pb-2 lg:pb-4">
                 {/* 25 Years Legacy */}
                 <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
                   <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">25</div>
