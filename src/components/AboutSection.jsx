@@ -36,7 +36,7 @@ const AboutSection = () => {
           </div>
 
           {/* Right side - Content */}
-          <div className="space-y-6 text-gray-600 text-base sm:text-lg leading-relaxed h-[550px] flex flex-col justify-center mt-8 sm:mt-0">
+          <div className="space-y-6 text-gray-600 text-base sm:text-lg leading-relaxed h-[550px] flex flex-col justify-center mt-14 sm:mt-0">
             {/* About Us Badge */}
             <div className="inline-flex items-center bg-white rounded-full px-2 py-1 shadow-sm w-fit min-w-0">
               <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
