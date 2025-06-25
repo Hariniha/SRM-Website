@@ -52,7 +52,7 @@ const HeroSection = () => {
               <img
                 src="/homepic1.png"
                 alt="SRM Medical College Building"
-                className="w-full h-48 sm:h-64 md:h-80 object-cover"
+                className="w-full h-48 sm:h-64 md:h-80 object-cover rounded-2xl"
               />
               
               {/* Play Button Overlay */}
@@ -69,7 +69,7 @@ const HeroSection = () => {
               </div>
 
               {/* Program Offered Badge - Bottom Right Rectangle Overlay */}
-              <div className="absolute bottom-0 right-0 w-2/5 sm:w-1/3 h-14 sm:h-16 bg-white bg-opacity-95 rounded-tl-2xl shadow-lg flex items-center justify-center border-t border-l border-blue-200">
+              <div className="absolute bottom-0 right-0 w-2/5 sm:w-1/3 h-14 sm:h-16 bg-white bg-opacity-95 rounded-tl-2xl rounded-br-2xl shadow-lg flex items-center justify-center border-t border-l border-blue-200">
                 <div className="w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center mr-2 rotate-320">
                   <svg 
                     className="w-3 h-3 text-blue-500" 

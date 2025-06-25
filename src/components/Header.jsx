@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Logo from './Logo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +29,14 @@ const Header = () => {
         ? 'backdrop-blur-md bg-white/90 shadow-sm' 
         : 'backdrop-blur-sm bg-white/70'
     }`}>
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-0 sm:px-2 md:px-4">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <Logo />
+          <img 
+            src="/logosrm.png" 
+            alt="SRM Logo" 
+            className="h-16 w-44 sm:h-20 sm:w-56 object-contain select-none -ml-4 sm:-ml-8" 
+            draggable="false"
+          />
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8">

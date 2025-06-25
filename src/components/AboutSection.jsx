@@ -14,24 +14,24 @@ const AboutSection = () => {
               
               {/* Blurred overlay at the bottom */}
               <div className="absolute rounded-2xl left-0 right-0 bottom-0 h-16 lg:h-28 xl:h-32 bg-white/60 backdrop-blur-md z-10 rounded-b-3xl flex flex-row gap-2 lg:gap-4 items-end px-2 lg:px-4 pb-2 lg:pb-4">
-                {/* 25 Years Legacy */}
-                <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
-                  <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">25</div>
-                  <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
-                    <span className="lg:text-[29px] lg:leading-[33px]">Year of</span>
-                    <span className="lg:text-[29px] lg:leading-[33px]">Legacy</span>
-                  </div>
-                </div>
-                
-                {/* 18+ Specialized Programs */}
-                <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
-                  <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">18+</div>
-                  <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
-                    <span className="lg:text-[29px] lg:leading-[33px]">Specialized</span>
-                    <span className="lg:text-[29px] lg:leading-[33px]">Programs</span>
-                  </div>
-                </div>
-              </div>
+  {/* 25 Years Legacy */}
+  <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center border-r-2 border-white">
+    <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">25</div>
+    <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
+      <span className="lg:text-[29px] lg:leading-[33px]">Year of</span>
+      <span className="lg:text-[29px] lg:leading-[33px]">Legacy</span>
+    </div>
+  </div>
+  
+  {/* 18+ Specialized Programs */}
+  <div className="flex flex-row items-end flex-1 gap-2 lg:gap-3 justify-center">
+    <div className="bg-blue-500 rounded-2xl p-2 lg:p-4 text-white shadow-lg text-2xl lg:text-4xl font-bold">18+</div>
+    <div className="flex flex-col text-black font-medium text-left mb-1 leading-tight" style={{ fontFamily: 'Marcellus, serif', fontWeight: 400, fontSize: '18px', lineHeight: '22px', lgFontSize: '29px', lgLineHeight: '33px' }}>
+      <span className="lg:text-[29px] lg:leading-[33px]">Specialized</span>
+      <span className="lg:text-[29px] lg:leading-[33px]">Programs</span>
+    </div>
+  </div>
+</div>
             </div>
           </div>
 
@@ -65,12 +65,16 @@ const AboutSection = () => {
             </div>
 
             {/* Read More Button */}
-            <button className="inline-flex items-center bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-3 py-1 rounded-full text-base transition-all duration-200 shadow-lg hover:shadow-xl w-fit min-w-0 mb-8 pb-2 sm:mb-10 sm:pb-4">
-              Read More
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
+           <div className="flex  items-center h-full">
+  <button
+    className="inline-flex items-center bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-3 py-1 rounded-full text-base transition-all duration-200 shadow-lg hover:shadow-xl w-fit min-w-0"
+  >
+    Read More
+    <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+    </svg>
+  </button>
+</div>
           </div>
         </div>
       </div>
