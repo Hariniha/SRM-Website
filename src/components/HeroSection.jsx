@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* DNA Helix positioned behind the text */}
       <DNAHelix />
       
-      <div className="max-w-7xl mx-auto px-6 h-full relative z-10">
+      <div className="max-w-7xl mx-auto px-4 pb-16 h-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center h-full pt-20">
           {/* Left Content */}
           <div className="space-y-8 relative">

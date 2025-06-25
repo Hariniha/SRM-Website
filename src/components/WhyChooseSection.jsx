@@ -39,7 +39,7 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 py-10 rounded-3xl mx-6 my-6">
+    <section className="bg-[#1CA5FD] py-10 rounded-3xl mx-6 my-6">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Section */}
         <div className="mb-16 text-left">
