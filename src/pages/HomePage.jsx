@@ -7,6 +7,23 @@ import ProgramsSection from '../components/ProgramsSection';
 import ResearchSection from '../components/ResearchSection';
 import WhyChooseSection from '../components/WhyChooseSection';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const HomePage = () => {
   return (
     <>
